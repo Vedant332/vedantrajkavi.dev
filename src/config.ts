@@ -1,10 +1,10 @@
 import type { SocialsObject } from "./types";
 
 export const SITE = {
-  website: "https://jakegut.com",
-  author: "Jake Gutierrez",
+  website: "https://swarommuley.com",
+  author: "Swarom Muley",
   desc: "A personal website",
-  title: "Jake Gutierrez",
+  title: "Swarom Muley",
   lightAndDarkMode: true,
   postPerPage: 5,
 };
@@ -19,22 +19,17 @@ export const LOGO_IMAGE = {
 export const SOCIALS: SocialsObject = [
   {
     name: "Github",
-    href: "https://github.com/jakegut",
+    href: "https://github.com/OneUpWallStreet",
     active: true,
   },
   {
     name: "Linkedin",
-    href: "https://linkedin.com/in/jakegut",
+    href: "https://www.linkedin.com/in/swarom-muley/",
     active: true,
   },
   {
     name: "Mail",
-    href: "mailto:jakegut0108@gmail.com",
+    href: "mailto:smuley@scu.edu",
     active: true,
-  },
-  {
-    name: "Mastodon",
-    href: "https://hachyderm.io/@jakegut",
-    active: true,
-  },
+  }
 ];

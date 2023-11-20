@@ -3,13 +3,8 @@ layout: ../layouts/AboutLayout.astro
 title: "Contact"
 ---
 
-Of course I'm available to contact via email, LinkedIn, GitHub via PR (if you so
-desire).
+If you need to speak with me for any reason, please feel free to schedule a call using the link below. 
 
-I'm also available for 1:1s to discuss... whatever... Resume reviews, career advice,
-computer science stuff, devops, you name it.
+As I mentioned on the /now page, I am actively searching for internships for Summer 2024. If you're contacting me about this, you can schedule a meeting at any time that suits you, even if it's at 3 AM on a weekend. I’ll make sure to be there lol
 
-Whenver you schedule, leave a little blurb about yourself and what you would like
-to talk about and I'll update the appointment with a video call link.
-
-[Schedule a time here](https://calendar.app.google/nvW3ECWwRWdfZMPy8)
+[Schedule a time here](https://calendly.com/swarom)
