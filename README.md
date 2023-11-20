@@ -1,4 +1,6 @@
-# jakegut.com
+# swarom.dev
+
+Currently, I'm using this fork for my personal website, but in the future, I might create something unique. Again, kudos to Jake Gut; I really love the design.
 
 ## Commands
 
