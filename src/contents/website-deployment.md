@@ -2,7 +2,7 @@
 title: "Ansible Deployment For swarom.dev"
 slug: fav-keynotes
 datetime: 2023-11-21T16:13:06.242Z
-draft: true
+draft: false
 tags:
   - ansible
   - automation
