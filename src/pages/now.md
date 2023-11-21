@@ -39,7 +39,7 @@ For the past 2.5 to 3 years, I have always liked DevOps. I was lucky that during
 So here's the list; it's not really exhaustive. If you ask me tomorrow, I might add some things.
 
 - Kubernetes (K8s)
-- Google Cloud
+- Google Cloud Platform (GCP)
 - Writing complex CI/CD Pipelines
 - API Security 
 - Reinforcement Learning
