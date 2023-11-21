@@ -1,10 +1,11 @@
 ---
-title: "Keynotes I Love"
-slug: keynotes-watched
-datetime: 2023-11-19T16:13:06.242Z
+title: "Espresso and Endpoints: Favorite Talks in Cloud and DevOps"
+slug: fav-keynotes
+datetime: 2023-11-20T16:13:06.242Z
 draft: false
 tags:
   - devops
+  - netflix
   - keynotes
   - cloud
   - aws
@@ -16,13 +17,46 @@ I have watched hundreds of hours of keynotes related to Cloud Computing and DevO
 
 ## A Day in the Life of a Netflix Engineer (Series by Dave Hahn)
 
-These talks are by far my favorite keynotes. They are a major reason why I love DevOps. The talks provide an insightful behind-the-scenes look at how Netflix operates entirely in the Cloud. I must have watched these videos hundreds of times by now, and I still learn something new every time I watch them.
+These talks are by far my favorite. They are a major reason why I love DevOps. The talks provide an insightful behind-the-scenes look at how Netflix operates entirely in the Cloud. I must have watched these videos hundreds of times by now, and I still learn something new every time I watch them.
 
+Netflix has a really interesting perspective towards DevOps, which is that of 'Freedom & Responsibility,' where engineers are responsible for the code they write. The point Dave Hahn makes is: why should the operations team be paged in the middle of the night to fix some bug in code they have never seen, when the world experts who wrote that piece of software are already in-house? So instead of paging the Ops person, the developer is responsible for that change.
+
+I believe this philosophy makes perfect sense, and it puzzles me why more organizations haven't adopted it. Are there situations where this approach wouldn't be effective? I wish I could ask him about his opinion on a centralized SRE (Site Reliability Engineering) team that handles all aspects of the process after deployment. In my last internship, we had an SRE team in charge of all the infrastructure, and I would love to compare this approach with Netflix's methods.
 
 - [AWS re:Invent 2015: A Day in the Life of a Netflix Engineer (DVO203)](https://youtu.be/-mL3zT1iIKw?si=jslxUoo3KgouC29j)
 - [AWS re:Invent 2016: Another Day in the Life of a Netflix Engineer (DEV209)](https://youtu.be/aWgtRKfrtMY?si=ELki0cgtl0z2QWbI)
 - [AWS re:Invent 2017: A Day in the Life of a Netflix Engineer III (ARC209)](https://youtu.be/T_D1G42G0dE?si=oeRts0JGHp10c8us)
 - [AWS re:Invent 2019: A day in the life of a Netflix engineer (NFX202)](https://youtu.be/0QS1TWLooo0?si=6S8yK3Dupya2In-_)
 
+## AWS re:Invent Keynotes 
+
+AWS re:Invent features some of the best keynotes. It's fascinating to observe the keynotes from 2012, where Andy Jassy was trying to convince everyone that the cloud is the future. As we progress through the keynotes over the years, that message gradually disappears. What becomes more important is how AWS offers differentiated capabilities compared to, say, Microsoft Azure or GCP. By 2019, for instance, no one really doubted that the cloud was the future. 
+
+I started my undergraduate degree in 2019, and I can't imagine building anything without access to AWS or another public cloud service. These platforms handle all the undifferentiated heavy lifting of infrastructure, allowing me to focus on building on top of that foundation.
+
+- [2012 re:Invent Day 1 Keynote: Andy Jassy](https://youtu.be/8FJ5DBLSFe4?si=2XNCzvqLdHPfVWRJ)
+- [AWS re:Invent 2013 | Day 1 Keynote with Andy Jassy](https://youtu.be/8ISQbdZ7WWc?si=Jah4QRq51HaesUpe)
+- [AWS re:Invent 2014 | Day 1 Keynote with Andy Jassy](https://youtu.be/zp0Qv4N3uXQ?si=8t-DMiz1oNcKwMjJ)
+- [AWS re:Invent 2015: Keynote with Andy Jassy](https://youtu.be/D5-ifl7KJ00?si=_uUNkbuX80nsA7fr)
+- [AWS re:Invent 2016 Keynote: Andy Jassy](https://youtu.be/8RrbUyw9uSg?si=gzxP7Iy0xHa0t4-a)
+- [AWS re:Invent 2017 Keynote - Andy Jassy](https://youtu.be/1IxDLeFQKPk?si=FBt6U9NmKcdNQ_s0)
+- [AWS re:Invent 2018 - Keynote with Andy Jassy](https://youtu.be/ZOIkOnW640A?si=EA6iUlQbxKVijpF9)
+- [AWS re:Invent 2019 - Keynote with Andy Jassy](https://youtu.be/7-31KgImGgU?si=yfrZAAVAseuUyBIT)
+- [AWS re:Invent 2020 - Keynote with Andy Jassy](https://youtu.be/xZ3k7Fd6_eU?si=mex8hChaO1cFtThq)
+
+I really enjoyed Andy Jassy's keynotes and owe much of my knowledge to him and his talks/interviews. However, I also appreciated Adam Selipsky's keynotes in 2021 and 2022. But what I liked even more were the Developer Keynotes by Dr. Werner Vogels, particularly his 2020 keynote at an Amsterdam sugar factory. He drew parallels between the operations of a 19th-century sugar factory and cloud computing in a post-pandemic world, which was fantastic!
+
+- [AWS re:Invent 2020 - Developer Keynote with Dr. Werner Vogels](https://youtu.be/jt-gV1YwmnI?si=QXxDQhv9S0j4Dg8s)
+
+## AWS re:Invent Breakout Sessions 
+
+AWS always hosts fantastic breakout sessions. The Netflix keynotes I mentioned earlier are examples of these sessions, but there are many more that I really like. Some of them are presented by AWS engineers, and at times, they invite notable AWS users like Netflix to discuss how they are utilizing AWS to build customer experiences in the Cloud.
+
+- [AWS re:Invent 2021 - Reliable scalability: How Amazon.com scales in the cloud](https://youtu.be/_AhfV5LZmvo?si=4FDxmf_lTFI97SAc)
+- [DevOps Culture at Amazon](https://youtu.be/mBU3AJ3j1rg?si=P3mWfxSEKiSZm5zI)
+- [AWS re:Invent 2022 - When security, safety, and urgency all matter: Handling Log4Shell (BOA204)](https://youtu.be/pkPkm7W6rGg?si=drR-PncL-qsNbBjl)
+- [AWS re:Invent 2016: Tuesday Night Live with James Hamilton](https://youtu.be/AyOAjFNPAbA?si=rn3r7FNOb8YPetcV)
+- [AWS re:Invent 2017 - Nora Jones Describes Why We Need More Chaos - Chaos Engineering, That Is
+](https://youtu.be/rgfww8tLM0A?si=CYck1qytNhE3YnW1)
 
 This is it for now, don't forget to add things later @Swarom.
