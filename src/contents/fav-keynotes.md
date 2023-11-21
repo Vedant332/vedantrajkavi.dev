@@ -59,4 +59,23 @@ AWS always hosts fantastic breakout sessions. The Netflix keynotes I mentioned e
 - [AWS re:Invent 2017 - Nora Jones Describes Why We Need More Chaos - Chaos Engineering, That Is
 ](https://youtu.be/rgfww8tLM0A?si=CYck1qytNhE3YnW1)
 
+
+## Miscellaneous
+
+These are a few of the tech talks I found interesting. They don't have a central source; instead, they are a random collection converted from multiple conferences and similar events.
+
+- [Half-Life: 25th Anniversary Documentary](https://youtu.be/TbZ3HzvFEto?si=274_BQSA73wjENKA)
+  - I just watched a presentation today where Valve engineers discussed the initial development of Half-Life. They explained how two engineers from Microsoft assembled a team from scratch to develop one of the greatest games of all time.
+  - Interestingly, some members of the team had no prior software development experience. This really demonstrates that with a good idea and a team of smart people, you can build anything!
+- [Internet Scale Storage](https://youtu.be/aS-FI4eTods?si=lnpk0_w8xUxinkSW)
+  - Guest lecture by James Hamilton discussing Cloud Computing at the University of Washington. It's a bit outdated but nonetheless a really interesting talk.
+- [Sparks of AGI: early experiments with GPT-4](https://youtu.be/qbIk7-JPB2c?si=bnpFNbdb50d9XzdN)
+  - I'm not a huge fan of AI, but this lecture by Sebastien Bubeck from Microsoft is really fascinating. He talks about the intelligence of Large Language Models (LLMs) and how they bring us one step closer to achieving Artificial General Intelligence (AGI), I guess.
+- [Why Google Stores Billions of Lines of Code in a Single Repository](https://youtu.be/W71BTkUbdqE?si=zBxNwvimnRy0MRQZ)
+  - I am aware that Google employs a monorepo architecture. This @Scale keynote presentation discusses some of the advantages and disadvantages of this approach. Google's code base is HUGE!
+- [Cluster Management at Google with Borg • John Wilkes • GOTO 2016](https://youtu.be/0W49z8hVn0k?si=m3SKT7QXPgKKlzL3)
+  - Google open-sourced Kubernetes, but internally they use a more powerful system called Borg. This keynote explains how that system works. It's super cool!
+- [How Amazon.com Broke Free from Oracle - AWS Fireside Chat](https://youtu.be/DqTiS-EJTXY?si=tzDaWlTs8nMhiGF8)
+  - Even though AWS has its own database, Aurora, hosted on RDS, Amazon was still using Oracle internally for some of their workloads. This fireside chat delved into how the migration from Oracle was carried out and highlighted the challenges encountered during the process.
+
 This is it for now, don't forget to add things later @Swarom.
