@@ -40,10 +40,10 @@ So here's the list; it's not really exhaustive. If you ask me tomorrow, I might 
 
 - Kubernetes (K8s)
 - Google Cloud Platform (GCP)
-- Writing complex CI/CD Pipelines
-- API Security 
+- Advanced CI/CD Pipelines
+- Cloud Security  
 - Reinforcement Learning
-- Running Chaos Engineering in Production 
+- Chaos Engineering 
 
 ### What I want to be
 
