@@ -51,7 +51,7 @@ If you don't count internships as work experience, then right now I have none, l
 
 Anyway, ideally, I would live in the Bay Area, and this is what I envision for my career trajectory. Fingers crossed XDD.
 
-- SRE Intern at JCI (first internship) **_<-- we are here_**
+- SRE Intern at [JCI](https://www.johnsoncontrols.com/) (first internship) **_<-- we are here_**
 - Grad Intern @ a tech company 
 - SDE 1 
 - SDE 2 

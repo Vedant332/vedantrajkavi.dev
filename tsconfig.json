@@ -6,6 +6,7 @@
       "@*": [
         "./src/*"
       ]
-    }
+    },
+    "strict": false  // Disable strict mode
   }
 }
