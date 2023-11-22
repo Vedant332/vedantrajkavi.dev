@@ -23,10 +23,8 @@ let imagePath =
     ? "og-image"
     : Astro.url.pathname.slice(1, -1).replaceAll("/", "--");
 
-const socialImageURL = new URL(
-  `/assets/ogs/${imagePath}.png`,
-  Astro.url.origin
-);
+const socialImageURL = "https://swarom.s3.us-west-1.amazonaws.com/swarom-dev-header.png";
+
 ---
 
 <!DOCTYPE html>
@@ -67,7 +65,7 @@ const socialImageURL = new URL(
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalURL} />
-    <meta name="image" property="og:image" content="https://swarom.s3.us-west-1.amazonaws.com/swarom-dev-header.png">
+    <meta name="image" property="og:image" content={socialImageURL}>
     <!-- <meta property="og:image" content={socialImageURL} /> -->
 
     <!-- Twitter -->
