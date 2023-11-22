@@ -1,6 +1,6 @@
 ---
 title: "Ansible Deployment For swarom.dev"
-slug: swarom.dev-deployment
+slug: ansible-ec2-deployment
 datetime: 2023-11-22T16:13:06.242Z
 draft: false
 tags:
