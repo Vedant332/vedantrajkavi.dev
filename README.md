@@ -1,6 +1,8 @@
 # [swarom.dev](https://www.swarom.dev/)
 
-Currently, I'm using this fork for my personal website, but in the future, I might create something unique. Again, kudos to [Jake Gut](https://www.linkedin.com/in/jakegut/); I really love the design.
+Currently, I'm using this fork for my personal website, but in the future, I might create something unique. Again, kudos to [Jake Gut](https://www.linkedin.com/in/jakegut/); I really love how he built on [astro-paper's design](https://astro-paper.pages.dev/).
+
+For those who are interested, here's the GitHub link for astro-paper: https://github.com/satnaing/astro-paper.
 
 ## Commands
 
