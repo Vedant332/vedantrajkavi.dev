@@ -4,7 +4,7 @@ export const SITE = {
   website: "https://swarom.dev",
   author: "Swarom Muley",
   desc: "Software Engineer Living in the San Francisco Bay Area, Particularly Interested in DevOps and Cloud Computing.",
-  title: "Swarom Muley",
+  title: "user@swarom:~$",
   lightAndDarkMode: true,
   postPerPage: 5,
 };
