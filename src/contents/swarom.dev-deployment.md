@@ -23,7 +23,7 @@ So, I came up with this simple deployment process that works, and it's just one 
 
 ## Current Apporach
 
-So to automate this I decided to use Ansible, why? Because I used at my internship to help a colleage and I thought it was pretty cool. So this is what my deployment looks like
+So to automate this I decided to use Ansible, why? Because I used at my internship to help a colleage and I thought it was pretty cool. So this is what my deployment looks like: 
 
 - Trigger `swarom.dev`
 - Shell Script Executes 
@@ -109,3 +109,8 @@ The Ansible playbook is very similar to the shell script, lol. It just SSHs into
 The process is pretty simple, and I put it together in about 30 minutes, but it works for now. But like I said earlier, GitHub Actions is a better way of doing this, because then you can work with individual commits instead of just pushing every change to the main branch. Anyway, thanks for reading this. Have a nice day!
 
 The code's here btw [OneUpWallStreet/swarom.dev-deployment](https://github.com/OneUpWallStreet/swarom.dev-deployment)
+
+### Console Output Example
+
+![null](/images/ansible_i1.png)
+![null](/images/ansible_i2.png)
