@@ -36,6 +36,11 @@ const path = Astro.url.pathname.length == 1 ? "" : Astro.url.pathname;
         <li>
           <a href="/contact" class={activeNav === "contact" ? "active" : ""}>/contact</a>
         </li>
+        <!-- Since I only have 2 posts rn. I'm disabling the posts tab. Will enable this later.
+        Btw you can even set a counter that decides how many posts show on the first page -->
+        <!-- <li>
+          <a href="/posts" class={activeNav === "posts" ? "active" : ""}>/posts</a>
+        </li> -->
       </ul>
       <div class="button-wrapper">
         <LinkButton
