@@ -27,6 +27,7 @@ I believe this philosophy makes perfect sense, and it puzzles me why more organi
 - [AWS re:Invent 2016: Another Day in the Life of a Netflix Engineer (DEV209)](https://youtu.be/aWgtRKfrtMY?si=ELki0cgtl0z2QWbI)
 - [AWS re:Invent 2017: A Day in the Life of a Netflix Engineer III (ARC209)](https://youtu.be/T_D1G42G0dE?si=oeRts0JGHp10c8us)
 - [AWS re:Invent 2019: A day in the life of a Netflix engineer (NFX202)](https://youtu.be/0QS1TWLooo0?si=6S8yK3Dupya2In-_)
+- [Dave Hahn "Fast, Safe, and Continuous -- Picking all 3 at Netflix" (Keynote) - Spinnaker Summit 2019](https://youtu.be/Xk2UHmKYISg?si=CPi5vNjqHf6THuM6)
 
 ## AWS re:Invent Keynotes 
 
