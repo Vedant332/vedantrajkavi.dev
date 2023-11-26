@@ -21,7 +21,7 @@ What I was doing initially was, anytime I made a change on my local machine, I w
 
 So, I came up with this simple deployment process that works, and it's just one line I have to run in my terminal: `swarom.dev`. This is just an alias and could have been anything, but anyway, I digress.
 
-## Current Apporach
+## Currently
 
 So to automate this I decided to use Ansible, why? Because I used at my internship to help a colleage and I thought it was pretty cool. So this is what my deployment looks like: 
 
