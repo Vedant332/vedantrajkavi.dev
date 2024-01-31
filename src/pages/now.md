@@ -3,7 +3,7 @@ layout: ../layouts/AboutLayout.astro
 title: "Now"
 ---
 
-I am a graduate student at Santa Clara University, studying Computer Science. My current coursework includes Operating Systems and Software Engineering.
+I am a graduate student at Santa Clara University, studying Computer Science. My current coursework includes Computer Networks and Internet of Things (IoT).
 
 Actively seeking internships for Summer 2024, my focus is on general Software Engineering roles with a particular interest in DevOps and Backend Development.
 
