@@ -12,6 +12,7 @@ Actively seeking internships for Summer 2024, my focus is on general Software En
 These are the Technologies/Tools I am proficient in, just some things off the top of my head that I have used in either my personal projects or during my internship:
 
 - Python 
+- Linux
 - Swift
   - SwiftUI
   - UIKit
