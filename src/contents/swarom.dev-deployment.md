@@ -23,7 +23,7 @@ So, I came up with this simple deployment process that works, and it's just one 
 
 ## Currently
 
-So to automate this I decided to use Ansible, why? Because I used at my internship to help a colleage and I thought it was pretty cool. So this is what my deployment looks like: 
+So, to automate this, I decided to go with Ansible. Why? Because I got to use it at my internship to help out a colleague, and honestly, I thought it was pretty cool. So, here’s what my deployment looks like:
 
 - Trigger `swarom.dev`
 - Shell Script Executes 
