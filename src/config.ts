@@ -2,9 +2,9 @@ import type { SocialsObject } from "./types";
 
 export const SITE = {
   website: "https://swarom.dev",
-  author: "Swarom Muley",
+  author: "Vedant Raj Kavi",
   desc: "Software Engineer Living in the San Francisco Bay Area, Particularly Interested in DevOps and Cloud Computing.",
-  title: "Swarom Muley",
+  title: "Vedant Raj Kavi",
   lightAndDarkMode: true,
   postPerPage: 5,
 };
@@ -19,17 +19,17 @@ export const LOGO_IMAGE = {
 export const SOCIALS: SocialsObject = [
   {
     name: "Github",
-    href: "https://github.com/OneUpWallStreet",
+    href: "https://github.com/Vedant332",
     active: true,
   },
   {
     name: "Linkedin",
-    href: "https://www.linkedin.com/in/swarom-muley/",
+    href: "https://www.linkedin.com/in/vedantrajkavi/",
     active: true,
   },
   {
     name: "Mail",
-    href: "mailto:smuley@scu.edu",
+    href: "mailto:vkavi@scu.edu",
     active: true,
   }
 ];

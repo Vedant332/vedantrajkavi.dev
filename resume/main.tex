@@ -1,11 +1,4 @@
-%-------------------------
-% Resume in Latex
-% Author : Jake Gutierrez
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
-%------------------------
-
-\documentclass[letterpaper,11pt]{article}
+\documentclass[a4paper,20pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -58,16 +51,15 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large\bfseries
+  \vspace{-3pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
-  \item\small{
+  \item\medium{
     {#1 \vspace{-2pt}}
   }
 }
@@ -81,14 +73,21 @@
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textbf{\small #2} \\
+      \textbf{#1} & \text{\small #2} \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\awardsSubHeading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-11pt}
+}
+
 \newcommand{\resumeSubSubheading}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
@@ -96,7 +95,7 @@
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & \textbf{\small #2}\\
+      \small#1 & \text{\small #2}\\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -115,160 +114,114 @@
 
 
 \begin{document}
-
-%----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
+%----------HEADING-----------------
 
 \begin{center}
-    {\scshape Swarom Saurabh Muley} \\ \vspace{1pt}
-    \small \ +1 (657)-642-8396  $\vert$  \href{mailto:smuley@scu.edu}{smuley@scu.edu} $\vert$ Santa Clara, CA  $\vert$
-    \href{https://www.linkedin.com/in/swarom-muley/}{{linkedin.com/in/swarom-muley}} $\vert$ 
-    \href{https://github.com/OneUpWallStreet}{github.com/OneUpWallStreet}
+    {\LARGE \scshape \textbf{VEDANT RAJ KAVI}} \\ 
+    \vspace{5pt}
+    
+    Santa Clara, CA $|$ 
+    (+1) 4085698787 $|$  
+    \href{vkavi@scu.edu}{   \underline{vedantrajkavi@gmail.com}} $|$  
+    \href{https://www.linkedin.com/in/vedantrajkavi/}{ \underline{LinkedIn}} 
+    
+    
     \vspace{-8pt}
 \end{center}
 
+%-----------EDUCATION-----------------
 
-%-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Santa Clara University}{Sep. 2023 -- June 2025}
-      {Master of Science in Computer Science \& Engineering}{Santa Clara, CA}
-
+      {Santa Clara University}{\textbf{\textit{September 2023 - March 2025}}}
+      {\textbf {Master of Science in Computer Science \& Engineering }}{Santa Clara, CA}
+      
+  {\textit{Coursework: Design \& Analysis of Algorithms, Computer Architecture  (GPA-3.85)}}
+  
+\vspace{2pt}
+   
     \resumeSubheading
-      {Vishwakarma Institute of Technology}{Aug. 2019 -- May 2023}
-      {Bachelor of Technology in Computer Engineering}{Pune, MH}
+      {Dr.A.P.J. Abdul Kalam Technical University Lucknow}{\textbf{\textit{August 2018 - June 2022}}}
+      {\textbf {Bachelor of Technology in Computer Science \& Engineering}}{Lucknow, India}
+      
+      {\textit{Coursework: Data Structures \& Algorithms, Operating Systems, Database Management Systems, Computer Networks}}
+     
   \resumeSubHeadingListEnd
+  \vspace{-12pt}
+  
+%--------SKILLS------------
+\section{Technical Skills}
+\begin{description}
+\item {\textbf{Programming Languages: }Java, Javascript, Typescript, C++, Python,  SQL, Go, Html, CSS, Swift.  }
+\item {\textbf{Developer Tools: }GIT, GitLab, Github, AWS, Docker, Kubernetes, REST API, GCP, Azure, Terraform, Jenkins, CI/CD, Linux, Pytorch, Numpy.}
+\item  {\textbf{Framework \& Libraries: }NodeJs, ExpressJs, ReactJs, Recoil, Redux, Microservices, PostgresSQL, MongoDB, MySQL, Prisma, Firebase, Redis, Tailwind.}
+\end{description}
+ \vspace{-12pt}
 
-%------RELEVANT COURSEWORK-------
-\section{Relevant Coursework}
-    %\resumeSubHeadingListStart
-        \begin{multicols}{4}
-            \begin{itemize}[itemsep=-5pt, parsep=3pt]
-                \item\small Data Structures
-                \item Machine Learning
-                \item Compiler Design
-                \item Operating Systems
-                \item Artificial Intelligence
-                \item Data Science
-                \item Database Management
-                \item Software Engineering
-                \item System Software
-                \item Web Technologies
-                \item Computer Networks
-                \item Algorithms  
-            \end{itemize}
-        \end{multicols}
-        \vspace*{2.0\multicolsep}
-    %\resumeSubHeadingListEnd
-
-
+ 
 %-----------EXPERIENCE-----------
-\section{Professional Experience}
-  \resumeSubHeadingListStart
+\section{Work Experience}
 
     \resumeSubheading
-      {Johnson Controls International}{Aug. 2022 -- June 2023}
-      {Site Reliability Engineer Intern}{Pune, MH}
+      {Accenture}{\textbf{\textit{December 2022 - July 2023}}}
+      {\textbf{Software Engineer }}{Mumbai, India}
       \resumeItemListStart
-        \resumeItem{Engineered a streamlined system to automate VPN access provisioning for the entire engineering organization, and seamlessly integrated it with Jira.}
-        \resumeItem{Eliminated the need for manual intervention by designing a fully automated solution that handled both VPN provisioning and access removal, in addition to providing real-time status updates through email notifications using SendGrid API.}
-        \resumeItem{Demonstrated efficiency as the system successfully processed thousands of VPN access requests each month, while also swiftly addressing and resolving over 5,000 Jira tickets within a short timeframe.}
-        \resumeItem{Recognized for contributions to the project during the SRE all-hands meeting, highlighting the impact and effectiveness of the automated system in improving workflow and productivity.}
-        \resumeItem{Contributed to a team effort in implementing MLOps practices to train a machine learning model on thousands of
-hourly-generated infrastructure health tickets, facilitating automated self-healing based on categorized recurring issues.}
-        \resumeItem{Automated SAAS token renewal and updates within Azure App Service across 10+ regions and environments. The system executed updates in live, operational environments and incorporated comprehensive error-handling mechanisms.}
-        \resumeItem{Led Knowledge Transfer sessions for new engineers on managing and enhancing systems I developed, ensuring a smooth transition and continued operational excellence.}
-      \resumeItemListEnd
-
+      \resumeItem{ Designed and implemented a secure wallet system with NodeJs and ExpressJs, integrating JWT authentication for smooth fund transfers, enhancing transaction efficiency and user security. }
+      \resumeItem{Achieved atomicity of transactions and concurrency control using MongoDB sessions, resulting in a 25\% reduction in transaction errors and ensuring transaction reliability in a multi-user environment.}
+        \resumeItem{Engineered a custom React hook with debounce functionality, reducing backend calls by 15\% and enhancing application responsiveness for improved efficiency.}
+       
+        \resumeItemListEnd
+    \vspace{3pt}
     
+       \resumeSubheading
+      {Web Alliance Ltd}{\textbf{\textit{September 2021 - November 2021}}}
+      {\textbf{Software Development Intern}}{Remote}
+      \resumeItemListStart
+        \resumeItem{Architected location-based booking APIs with Javacript, enhancing doctor-patient matching accuracy through precise geolocation, resulting in a notable 10\% increase in appointment bookings on the website.}
+         
+        \resumeItem{Executed implementation of efficient search module with MongoDB aggregation pipeline, resulting in a 17\% reduction in response times and saving users an average of 15 seconds per search.}
+          \resumeItem{Leveraged Firebase Cloud Messaging (FCM) to deliver real-time notifications across all mobile and web platforms, resulting in a 20\% increase in user engagement and retention.}
+           
+             
+      \resumeItemListEnd
   \resumeSubHeadingListEnd
-\vspace{-16pt}
+  
+\vspace{-12pt}
 
 %-----------PROJECTS-----------
 \section{Projects}
-    \vspace{-5pt}
+
+    \vspace{-3pt}
     \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{iOS App, Brooklyn GRE \& SAT Preparation} $|$ \emph{Swift, Python, SwiftUI, UIKit, Go, AWS, DynamoDB}}{April 2022}
-          \resumeSubItem{Link - \href{https://apps.apple.com/in/app/brooklyn-gre-sat-preparation/id1620017367}{\textit{https://apps.apple.com/in/app/brooklyn-gre-sat-preparation/id1620017367}}}
+        \resumeProjectHeading
+          {\textbf{OneClick} $|$ \emph{\textbf{Typescript, AWS(S3, SQS, Fargate), Redis}}}{\textbf{\textit{January 2024 – Feburary 2024}}}
           \resumeItemListStart
-            \resumeItem{Built an iOS application for standardized test preparation, harnessing Swift and Golang. The backend was engineered using Golang Gin, containerized through AWS Fargate, and directed through an AWS Load Balancer over HTTPS.}
-            \resumeItem{Employed a blend of SwiftUI and UIKit to create the user interface for the mobile application. Utilized Swift.SQLite for persistent data storage and integrated MixPanel for comprehensive analytics.}
-          \resumeItemListEnd
-          \vspace{-13pt}
-      \resumeProjectHeading
-          {\textbf{iOS App, Thaleia Music Updates} $|$ \emph{Swift, Python, SwiftUI, Spotify-API, AWS SNS, MongoDB}}{Aug. 2021}
-        \resumeSubItem{Link - \href{https://apps.apple.com/in/app/thaleia/id1581369776}{\textit{https://apps.apple.com/in/app/thaleia/id1581369776}} }
+            \resumeItem{Created an upload service for a deployment platform, enabling users to send GitHub URLs for cloning and storing projects in AWS S3, and then used SQS to queue projects for deployment.}
+                \resumeItem{Implemented a deployment process that pulls project data from SQS, builds projects using EC2 and AWS Fargate to handle dynamic scaling based on queue length, and stores final static assets in S3.}
+            \resumeItem{Implemented caching using Redis to enhance content delivery, minimizing redundant S3 requests by serving repeated queries from the server cache.}
+          \resumeItemListEnd   
+            \vspace{-3pt}
+    \resumeProjectHeading
+          {\textbf{DevConnector} $|$ \emph{\textbf{NodeJs, ExpressJs, MongoDb, ReactJs}}}{\textbf{\textit{July 2023 – August 2023}}}
           \resumeItemListStart
-            \resumeItem{Created a music-tracking iOS application with an event-driven microservices architecture, utilizing Python automation and the Spotify API to deliver real-time music updates.}
-            \resumeItem{Orchestrated automated scheduling via AWS CloudWatch and remote notifications through AWS Pinpoint.}
+            \resumeItem{Developed a networking platform utilizing ReactJs for the front end, NodeJs with ExpressJs for the back end, and MongoDB for data storage, enabling interactive discussion forums with features such as post creation, liking, and commenting.}
+            \resumeItem{Constructed a real-time chat system using Socket.IO, facilitating instantaneous communication among users and fostering dynamic interaction, for better user engagement.}
+            \resumeItem{Formulated a user connectivity status monitor using React Hooks, ensuring uninterrupted content access and interaction by detecting online/offline statuses in real-time.}
           \resumeItemListEnd 
-          \vspace{-13pt}
-          \resumeProjectHeading
-          {\textbf{Deep Learning Agent, TD-Gammon} $|$ \emph{Python, PyTorch, NumPy, Deep Learning, RL}}{Mar. 2021}
-          \resumeSubItem{Link - \href{https://github.com/OneUpWallStreet/TD-Gammon}{\textit{https://github.com/OneUpWallStreet/TD-Gammon}}}
+            \vspace{-9pt}
+        \resumeProjectHeading
+          {\textbf{Crown Clothing} $|$ \emph{\textbf{React, Redux, Firebase}}}{\textbf{\textit{March 2022 – June 2022}}}
           \resumeItemListStart
-            \resumeItem{Reimplemented TD Gammon (G. Tesauro, 1995) using PyTorch, enabling a self-play reinforcement learning agent to achieve superhuman performance in Backgammon.}
-            \resumeItem{Constructed the Backgammon engine from the ground up using Python, meticulously training the agent through an extensive dataset of over 300,000 self-play games.}
-            \resumeItem{Designed intuitive win probability graphs and a user-friendly "move probability" interface using Matplotlib.}
+            \resumeItem{Built an e-commerce platform using React, integrating inventory data from Rapid API, and implementing Stripe API for secure payments, resulting in an efficient shopping experience}
+                \resumeItem{Applied Firebase for multifactor authentication, leveraging SMS code verification on users' phones to enhance security measures, ensuring authentication.}
+            \resumeItem{Incorporated Redux for state management, reducing page reloads through centralized data storage and efficient state updates, enhancing  data handling and optimized performance.}
           \resumeItemListEnd 
     \resumeSubHeadingListEnd
-\vspace{-15pt}
-
-
+\vspace{-9pt}
 
 %-----------PUBLICATIONS-----------
-\section{Publications}
-    \resumeItemListStart
-    \resumeItem{Cloud Computing Services for Mobile Applications (Swarom Muley, Dr. S.T. Patil)}
-    \resumeItemListEnd
-  \vspace{-13pt}
 
-% % %-----------Something else -----------
-% \section{Not Sure what this should be}
-%     \resumeItemListStart
-%     \resumeItem{Hello}
-% %         \resumeItem{Firefox for iOS, Swift Programming Language \& Tabliss Chrome Extension}
-%     \resumeItemListEnd
-% %  \vspace{-13pt}
-
-
-% %-----------OPEN SOURCE CONTRIBUTIONS-----------
-% \section{Open Source Contributions}
-%     \resumeItemListStart
-%         \resumeItem{Firefox for iOS, Swift Programming Language \& Tabliss Chrome Extension}
-%     \resumeItemListEnd
-%  \vspace{-13pt}
-
-
-
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: Swift, Python, Golang, C++, C, Java, JavaScript, Typescript, Ruby, SQL, HTML/CSS, Node.js, C\#, Bash} \\
-     \textbf{Frameworks/Tools}{: AWS, Shell, Travis, Linux, Docker, Azure, Jenkins, Kubernetes, GCP, CI/CD, Terraform, Ansible} \\
-     \textbf{Misc.}{: MySQL, NoSQL, AWS S3, MS SQL, EKS, Redis, REST-API, PostgreSQL, Kafka, Git, Express, MongoDB, Oracle} \\
-    }}
- \end{itemize}
- \vspace{-16pt}
-
-
-%-----------INVOLVEMENT---------------
-% \section{Leadership / Extracurricular}
-%     \resumeSubHeadingListStart
-%         \resumeSubheading{Fraternity}{Spring 2020 -- Present}{President}{University Name}
-%             \resumeItemListStart
-%                 \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
-%                 \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
-%                 \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
-%             \resumeItemListEnd
-        
-%     \resumeSubHeadingListEnd
-
+\vspace{-5pt}
 
 \end{document}
