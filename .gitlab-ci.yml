@@ -1,0 +1,47 @@
+image: docker:latest
+
+services:
+  - name: docker:dind
+    
+stages:
+  - build-and-push-dh
+  - install-gcloud-and-deploy-to-gke
+
+variables:
+  DOCKER_IMAGE: vedant332/vedantx86:$CI_COMMIT_SHORT_SHA
+  GKE_CLUSTER:  vedantrajkavi-dev
+  GKE_ZONE: us-east4-c	
+  GKE_PROJECT: vedantrajkavi
+  DEPLOYMENT_NAME: vedantrajkavi-deployment
+
+build-and-push-to-dockerhub-job:
+  stage: build-and-push-dh
+  script:
+    - echo "Building Image $DOCKER_HUB_URL"
+    - docker build -t $DOCKER_IMAGE .
+    - echo "Image Built"
+    - echo "Pushing Image To DockerHub"
+    - docker login -u $DOCKER_HUB_USERNAME -p $DOCKER_HUB_TOKEN
+    - docker push $DOCKER_IMAGE
+    - echo "Image pushed to DockerHub with SHA tag"
+    - echo "Tagging image with latest and pushing to DockerHub"
+    - docker tag $DOCKER_IMAGE vedant332/vedantx86:latest
+    - docker push vedant332/vedantx86:latest
+    - echo "Image tagged with latest and pushed to DockerHub"
+
+install-gcloud-and-update-cluster-job:
+  image: google/cloud-sdk:latest
+  stage: install-gcloud-and-deploy-to-gke
+  script:
+    - echo $GCLOUD_SERVICE_KEY > ${HOME}/gcloud-service-key.json
+    - gcloud auth activate-service-account --key-file=${HOME}/gcloud-service-key.json
+    - gcloud config set project $GKE_PROJECT
+    - gcloud config set compute/zone $GKE_ZONE
+    - gcloud container clusters get-credentials $GKE_CLUSTER
+    - echo "GCloud Installed and Configured"
+    - echo "Deploying to GKE"
+    - kubectl set image deployment/$DEPLOYMENT_NAME vedantrajkavi-container=$DOCKER_IMAGE
+    - kubectl rollout restart deployment/$DEPLOYMENT_NAME
+    - echo "Deployment updated and rollout restarted"
+    - echo "Should Restart Deployment $DEPLOYMENT_NAME with Image $DOCKER_IMAGE"
+
