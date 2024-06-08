@@ -3,8 +3,6 @@ layout: ../layouts/AboutLayout.astro
 title: "Now"
 ---
 
-# About Me
-
 Hi there! I'm currently a graduate student at Santa Clara University, where I'm pursuing a degree in Computer Science. My journey in the tech world has been an exciting one, filled with learning and growth. I have a keen interest in DevOps and cloud computing, and I particularly enjoy creating infrastructure that supports robust and scalable applications.
 
 ## My Tech Stack
