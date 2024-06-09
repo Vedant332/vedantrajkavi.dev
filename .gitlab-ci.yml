@@ -12,7 +12,7 @@ variables:
   GKE_CLUSTER:  vedantrajkavi-dev
   GKE_ZONE: us-east4-c	
   GKE_PROJECT: vedantrajkavi
-  DEPLOYMENT_NAME: vedantrajkavi-deployment
+  DEPLOYMENT_NAME: vedantrajkavi
 
 build-and-push-to-dockerhub-job:
   stage: build-and-push-dh
