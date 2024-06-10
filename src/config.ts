@@ -1,7 +1,7 @@
 import type { SocialsObject } from "./types";
 
 export const SITE = {
-  website: "https://swarom.dev",
+  website: "https://vedantkv.dev",
   author: "Vedant Raj Kavi",
   desc: "Software Engineer Living in the San Francisco Bay Area, Particularly Interested in DevOps and Cloud Computing.",
   title: "Vedant Raj Kavi",

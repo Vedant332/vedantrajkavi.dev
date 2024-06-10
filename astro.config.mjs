@@ -8,7 +8,7 @@ import astroOGImage from "./plugins/og-image";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://www.swarom.dev/",
+  site: "https://www.vedantkv.dev/",
   integrations: [
     tailwind({
       config: {
