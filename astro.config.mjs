@@ -8,7 +8,8 @@ import astroOGImage from "./plugins/og-image";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://www.vedantkv.dev/",
+  site: "https://vedant332.github.io/vedantrajkavi.dev",
+  base: "/vedantrajkavi.dev/",
   integrations: [
     tailwind({
       config: {
@@ -16,16 +17,12 @@ export default defineConfig({
       },
     }),
     react(),
-    ...(process.env.CI
-      ? [] 
-      : [
-          sitemap(),
-          astroOGImage({
-            config: {
-              path: "/posts",
-            },
-          }),
-        ]),
+    sitemap(),
+    astroOGImage({
+      config: {
+        path: "/posts",
+      },
+    }),
   ],
   markdown: {
     remarkPlugins: [
