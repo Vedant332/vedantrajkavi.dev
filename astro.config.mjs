@@ -8,8 +8,8 @@ import astroOGImage from "./plugins/og-image";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://vedant332.github.io/vedantrajkavi.dev",
-  base: "/vedantrajkavi.dev/",
+  site: "https://vedant332.github.io/vedantrajkavi.dev", // ✅ GitHub Pages site URL
+ // base: "/vedantrajkavi.dev/",                            // ✅ Add this line
   integrations: [
     tailwind({
       config: {
