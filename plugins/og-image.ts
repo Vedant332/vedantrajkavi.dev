@@ -14,15 +14,26 @@ export default function astroOGImage({
       "astro:build:done": async ({ dir, pages }) => {
         let path = config.path;
         // Filters all the routes that need OG image
+        
 
         // // Creates a directory for the images if it doesn't exist already
         let directory = fileURLToPath(new URL(`./assets/ogs`, dir));
         if (!fs.existsSync(directory)) {
           fs.mkdirSync(directory);
         }
+        
 
         const browser = await puppeteer.launch({
-          args: ["--no-sandbox", "--disable-setuid-sandbox"],
+          executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || '/opt/homebrew/bin/chromium',
+          headless: true,
+          protocolTimeout: 60000,
+          args: [
+            '--no-sandbox',
+            '--disable-setuid-sandbox',
+            '--disable-dev-shm-usage',
+            '--disable-accelerated-2d-canvas',
+            '--disable-gpu',
+          ],
         });
         for (const { pathname } of pages) {
           // Gets the title
@@ -43,14 +54,19 @@ export default function astroOGImage({
             width: 1200,
             height: 630,
           });
+          
+
 
           await page.screenshot({
             path: fileURLToPath(
               new URL(`./assets/ogs/${imagePath}.png`, dir)
             ),
+            
             encoding: "binary",
           });
         }
+        
+        
         await browser.close();
       },
     },

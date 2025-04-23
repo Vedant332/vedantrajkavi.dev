@@ -1,12 +1,27 @@
+// {
+//   "extends": "astro/tsconfigs/strict",
+//   "compilerOptions": {
+//     "baseUrl": ".",
+//     "paths": {
+//       "@*": [
+//         "./src/*"
+//       ]
+//     },
+//     "strict": false  // Disable strict mode
+//   }
+// }
 {
-  "extends": "astro/tsconfigs/strict",
+  "extends": "astro/tsconfigs/base",
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@*": [
-        "./src/*"
-      ]
+      "@*": ["./src/*"]
     },
-    "strict": false  // Disable strict mode
-  }
+    "verbatimModuleSyntax": true,
+    "jsx": "react-jsx",
+    "outDir": "./dist",       // Compiled files will be output here
+    "rootDir": "./src"        // Source files are located here
+  },
+  "include": ["src/**/*"],    // Explicitly include all files in src
+  "exclude": ["node_modules"] // Exclude node_modules from compilation
 }

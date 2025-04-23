@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vedantrajkavi-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vedantrajkavi
+  template:
+    metadata:
+      labels:
+        app: vedantrajkavi
+    spec:
+      containers:
+      - name: vedantrajkavi-container
+        image: vedant332/vedantdev-digitalocean:latest
+        ports:
+        - containerPort: 80

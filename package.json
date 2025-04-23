@@ -2,6 +2,7 @@
   "name": "astro-paper",
   "version": "1.1.2",
   "private": false,
+  "homepage": "https://vedant332.github.io/vedantrajkavi.dev",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -10,7 +11,9 @@
     "astro": "astro",
     "format:check": "prettier --check .",
     "format": "prettier --write .",
-    "cz": "cz"
+    "cz": "cz",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist -r https://github.com/Vedant332/vedantrajkavi.dev.git -f"
   },
   "dependencies": {
     "@astrojs/rss": "^2.4.3",
@@ -35,10 +38,13 @@
     "@types/sanitize-html": "^2.9.0",
     "commitizen": "^4.2.5",
     "cz-conventional-changelog": "^3.3.0",
+    "gh-pages": "^6.3.0",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "typescript": "^5.6.3",
+    "vite": "^4.5.13"
   },
   "config": {
     "commitizen": {
