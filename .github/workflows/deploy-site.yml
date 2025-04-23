@@ -13,17 +13,20 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
       - name: Install dependencies
         run: npm install
 
-      - name: Build project
+      - name: Build site with Astro
         run: npm run build
 
-      - name: Add .nojekyll file
-        run: |
-          mkdir -p dist
-          echo "" > dist/.nojekyll
-      
+      - name: Add .nojekyll to disable Jekyll on GitHub Pages
+        run: echo "" > dist/.nojekyll
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
