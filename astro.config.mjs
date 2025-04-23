@@ -16,12 +16,16 @@ export default defineConfig({
       },
     }),
     react(),
-    sitemap(),
-    astroOGImage({
-      config: {
-        path: "/posts",
-      },
-    }),
+    ...(process.env.CI
+      ? [] 
+      : [
+          sitemap(),
+          astroOGImage({
+            config: {
+              path: "/posts",
+            },
+          }),
+        ]),
   ],
   markdown: {
     remarkPlugins: [

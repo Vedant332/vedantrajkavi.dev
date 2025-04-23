@@ -18,13 +18,20 @@ jobs:
         with:
           node-version: 18
 
+      - name: Install Chromium (for Puppeteer)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y chromium-browser
+
       - name: Install dependencies
         run: npm install
 
       - name: Build site with Astro
         run: npm run build
+        env:
+          PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium-browser
 
-      - name: Add .nojekyll to disable Jekyll on GitHub Pages
+      - name: Add .nojekyll
         run: echo "" > dist/.nojekyll
 
       - name: Deploy to GitHub Pages
